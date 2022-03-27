@@ -8,6 +8,7 @@
 		<img src="ktumygtukas.png" height="128px" width="128px" onclick="addToScore(clickingPower)">
 		
 		<button onclick="buyUpgrade()">Upgrade [<span id="upgradeCost">10</span>] == <span id="upgrades">0</span></button>
+		<button onclick="buyUpgrade2()">Upgrade [<span id="upgradeCost2">10</span>] == <span id="upgrades2">0</span></button>
 		
 		<script>
 			var score = 0;
@@ -15,6 +16,8 @@
 			
 			var upgradeCost = 10;
 			var upgrades = 0;
+			var upgradeCost2 = 100;
+			var upgrades2 = 0;
 			
 			function buyUpgrade(){
 				if (score >= upgradeCost){
@@ -26,6 +29,19 @@
 					document.getElementById("score").innerHTML = score;
 					document.getElementById("upgradeCost").innerHTML = upgradeCost;
 					document.getElementById("upgrades").innerHTML = upgrades;
+				}
+			}
+			
+			function buyUpgrade2(){
+				if (score >= upgradeCost2){
+					score = score - upgradeCost2;
+					upgrades2 = upgrades2 + 1;
+					upgradeCost2 = Math.round(upgradeCost2 * 1.3);
+					clickingPower = clickingPower + 10;
+					
+					document.getElementById("score").innerHTML = score;
+					document.getElementById("upgradeCost").innerHTML = upgradeCost2;
+					document.getElementById("upgrades").innerHTML = upgrades2;
 				}
 			}
 			
