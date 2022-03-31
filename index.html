@@ -5,30 +5,93 @@
 	</head>
 	
 	<body>
+		<div class="left">
+			<p id="upgradeNames">Patobulinimai</p>
+			
+			<table class="shop" onclick="buyUpgradeActive1()">
+				<tr>
+					<td id="image"><img src="vape.png"></td>
+					<td id="nameAndCost">
+						<p>Veipas</p>
+						<p><span id="upgradeActiveCost1">10</span> Kopetencijų</p>
+					</td>
+					<td id="amount"><span id="upgradesActive1">0</span></td>
+				</tr>
+			</table>
+			
+			<table class="shop" onclick="buyUpgradeActive2()">
+				<tr>
+					<td id="image"><img src="energy.png"></td>
+					<td id="nameAndCost">
+						<p>RedBull</p>
+						<p><span id="upgradeActiveCost2">100</span> Kopetencijų</p>
+					</td>
+					<td id="amount"><span id="upgradesActive2">0</span></td>
+				</tr>
+			</table>
+			
+			<table class="shop" onclick="buyUpgradeActive3()">
+				<tr>
+					<td id="image"><img src="kebab.png"></td>
+					<td id="nameAndCost">
+						<p>Kebabas</p>
+						<p><span id="upgradeActiveCost3">1000</span> Kopetencijų</p>
+					</td>
+					<td id="amount"><span id="upgradesActive3">0</span></td>
+				</tr>
+			</table>
+			
+			<p id="upgradeNames">Taškų generatoriai</p>
+			
+			<table class="shop" onclick="buyUpgradePassive1()">
+				<tr>
+					<td id="image"><img src="mentorius.png"></td>
+					<td id="nameAndCost">
+						<p>Mentorius</p>
+						<p><span id="upgradePassiveCost1">20</span> Kopetencijų</p>
+					</td>
+					<td id="amount"><span id="upgradesPassive1">0</span></td>
+				</tr>
+			</table>
+			
+			<table class="shop" onclick="buyUpgradePassive2()">
+				<tr>
+					<td id="image"><img src="tutorius.png"></td>
+					<td id="nameAndCost">
+						<p>Tutorius</p>
+						<p><span id="upgradePassiveCost2">200</span> Kopetencijų</p>
+					</td>
+					<td id="amount"><span id="upgradesPassive2">0</span></td>
+				</tr>
+			</table>
+			
+			<table class="shop" onclick="buyUpgradePassive3()">
+				<tr>
+					<td id="image"><img src="infosa.png"></td>
+					<td id="nameAndCost">
+						<p>Atstovybė</p>
+						<p><span id="upgradePassiveCost3">2000</span> Kopetencijų</p>
+					</td>
+					<td id="amount"><span id="upgradesPassive3">0</span></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="right">
+				<img src="logo.png"><br>
+		</div>	
+		
 		<center>
-			<div class="right">
+			<div class="middle">
 				<div class="scoreContainer">
 					<span id="score">0</span> Kompetencijos <br>
 					<span id="auto">0</span> Kompetencijos per sekundę
 				</div>
-				<img src="logo.png" height="80px" width="260px">
-				<br>
 				<div class="clicker">
-					<img src="ktumygtukas.png" height="200px" width="200px" onclick="addToScore(clickingPower)">
+					<img src="ktumygtukas.png" onclick="addToScore(clickingPower)">
 				</div>
 			</div>
-		</center>
-				
-		<div class="left">
-			<button onclick="buyUpgradeActive1()"> Active1 [<span id="upgradeActiveCost1">10</span>] == <span id="upgradesActive1">0</span></button>
-			<button onclick="buyUpgradeActive2()"> Active2 [<span id="upgradeActiveCost2">100</span>] == <span id="upgradesActive2">0</span></button>
-			<button onclick="buyUpgradeActive3()"> Active3 [<span id="upgradeActiveCost3">1000</span>] == <span id="upgradesActive3">0</span></button><br>
-			<button onclick="buyUpgradePassive1()"> Passive1 [<span id="upgradePassiveCost1">15</span>] == <span id="upgradesPassive1">0</span></button><br>
-			<button onclick="buyUpgradePassive2()"> Passive2 [<span id="upgradePassiveCost2">200</span>] == <span id="upgradesPassive2">0</span></button><br>
-			<button onclick="buyUpgradePassive3()"> Passive3 [<span id="upgradePassiveCost3">4000</span>] == <span id="upgradesPassive3">0</span></button><br>
-		</div>
-		
-			<!--<img src="logo.png" height="80px" width="260px">-->
+		</center>		
 		
 		<script>
 			var score = 0;
@@ -42,12 +105,12 @@
 			var upgradesActive2 = 0;
 			var upgradeActiveCost3 = 1000;
 			var upgradesActive3 = 0;
-			var upgradePassiveCost1 = 15;
+			var upgradePassiveCost1 = 20;
 			var upgradesPassive1 = 0;
 			var upgradePassiveCost2 = 200;
 			var upgradesPassive2 = 0;
-			var upgradePassiveCost2 = 4000;
-			var upgradesPassive2 = 0;
+			var upgradePassiveCost3 = 2000;
+			var upgradesPassive3 = 0;
 			
 			function buyUpgradeActive1(){
 				if (score >= upgradeActiveCost1){
@@ -105,7 +168,7 @@
 			function buyUpgradePassive2(){
 				if (score >= upgradePassiveCost2){
 					score = score - upgradePassiveCost2;
-					upgradesPassive2 = upgradesPassive2 + 10;
+					upgradesPassive2 = upgradesPassive2 + 1;
 					auto = auto + 10;
 					upgradePassiveCost2 = Math.round(upgradePassiveCost2 * 1.3);
 					
@@ -119,8 +182,8 @@
 			function buyUpgradePassive3(){
 				if (score >= upgradePassiveCost3){
 					score = score - upgradePassiveCost3;
-					upgradesPassive3= upgradesPassive3 + 100;
-					auto = auto + 3;
+					upgradesPassive3= upgradesPassive3 + 1;
+					auto = auto + 100;
 					upgradePassiveCost3 = Math.round(upgradePassiveCost3 * 1.35);
 					
 					document.getElementById("score").innerHTML = score;
@@ -130,14 +193,11 @@
 				}
 			}
 			
-			
 			function addToScore(amount){
 				score = score + amount;
 				document.getElementById("score").innerHTML = score;
 			}
-			
-			
-			
+
 			setInterval(function() {
 				score = score + auto;
 				
