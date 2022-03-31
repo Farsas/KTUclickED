@@ -2,6 +2,8 @@
 	<head>
 		<title>KTUclickED</title>
 		<link rel="stylesheet" href="mystyle.css">
+                <link rel="icon" href="foto/logoicon.png">
+                <meta charset="UTF-8">
 	</head>
 	
 	<body>
@@ -10,10 +12,10 @@
 			
 			<table class="shop" onclick="buyUpgradeActive1()">
 				<tr>
-					<td id="image"><img src="icons/vape.png"></td>
+					<td id="image"><img src="foto/vape.png" /></td>
 					<td id="nameAndCost">
 						<p>Veipas</p>
-						<p><span id="upgradeActiveCost1">10</span> Kompetencijų</p>
+						<p><span id="upgradeActiveCost1">10</span></p>
 					</td>
 					<td id="amount"><span id="upgradesActive1">0</span></td>
 				</tr>
@@ -21,7 +23,7 @@
 			
 			<table class="shop" onclick="buyUpgradeActive2()">
 				<tr>
-					<td id="image"><img src="icons/energy.png"></td>
+					<td id="image"><img src="foto/energy.png" /></td>
 					<td id="nameAndCost">
 						<p>RedBull</p>
 						<p><span id="upgradeActiveCost2">100</span> Kompetencijų</p>
@@ -32,7 +34,7 @@
 			
 			<table class="shop" onclick="buyUpgradeActive3()">
 				<tr>
-					<td id="image"><img src="icons/kebab.png"></td>
+					<td id="image"><img src="foto/kebab.png" /></td>
 					<td id="nameAndCost">
 						<p>Kebabas</p>
 						<p><span id="upgradeActiveCost3">1000</span> Kompetencijų</p>
@@ -45,7 +47,7 @@
 			
 			<table class="shop" onclick="buyUpgradePassive1()">
 				<tr>
-					<td id="image"><img src="icons/mentorius.png"></td>
+					<td id="image"><img src="foto/mentorius.png" /></td>
 					<td id="nameAndCost">
 						<p>Mentorius</p>
 						<p><span id="upgradePassiveCost1">20</span> Kompetencijų</p>
@@ -56,7 +58,7 @@
 			
 			<table class="shop" onclick="buyUpgradePassive2()">
 				<tr>
-					<td id="image"><img src="icons/tutorius.png"></td>
+					<td id="image"><img src="foto/tutorius.png" /></td>
 					<td id="nameAndCost">
 						<p>Tutorius</p>
 						<p><span id="upgradePassiveCost2">200</span> Kompetencijų</p>
@@ -67,7 +69,7 @@
 			
 			<table class="shop" onclick="buyUpgradePassive3()">
 				<tr>
-					<td id="image"><img src="icons/infosa.png"></td>
+					<td id="image"><img src="foto/infosa.png" /></td>
 					<td id="nameAndCost">
 						<p>Atstovybė</p>
 						<p><span id="upgradePassiveCost3">2000</span> Kompetencijų</p>
@@ -78,21 +80,19 @@
 		</div>
 		
 		<div class="right">
-				<img src="icons/logo.png"><br>
+				<img src="foto/logo.png" /><br>
+                                <p id="meniu">Meniu</p>
+                                <ul>
+                                <li><a href="index.php">Atsijungti</a></li>
+                                </ul>
 		</div>	
-		
-		<center>
 			<div class="middle">
 				<div class="scoreContainer">
-					<span id="score">0</span> Kompetencijos <br>
-					<span id="auto">0</span> Kompetencijos per sekundę
+					<span id="score">0</span><br>
+					<span id="auto">0</span>/sec.
 				</div>
-				<div class="clicker">
-					<img src="icons/ktumygtukas.png" onclick="addToScore(clickingPower)">
-				</div>
-			</div>
-		</center>		
-		
+				<img src="foto/ktu.png" onclick="addToScore(clickingPower)" />
+			</div>		
 		<script>
 			var score = 0;
 			var clickingPower = 1;
