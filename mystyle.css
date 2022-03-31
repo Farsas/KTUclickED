@@ -1,32 +1,95 @@
 .left {
+	padding: 150px 10px 10px 10px;
 	float: left;
-	width: 15%
+	width: 15%;
 }
 
 .middle {
+	padding: 25px 10px 10px 10px;
 	float: middle;
-	width: 85%;
+	width: 80%;
 }
 
 .right {
 	float: right;
-	width: 85%
+	width: 10%;
 }
 
-.score {
+.right img {
+	padding: 25px 10px 10px 10px;
+	width: 80%;
+}
+
+.scoreContainer {
 	background-color: rgb(230, 230, 230, 0.8);
 	width: 75%;
 	padding: 15px;
 	border-radius: 15px;
-	font-size: 20px;
+	font-size: 48px;
 	font-weight: bold;
 }
 
+.scoreContainer img{
+	float: right;
+}
+
 .clicker img {
-	padding-top: 250px;
+	width: 20%;
+	padding-top: 400px;
 	position: relative;
 	transition: all .2s ease-in-out;
 }
 
-.clicker img:hover { transform: scale(1.15); }
-.clicker img:active { transform: scale(0.9); }
+/*.clicker img:hover { transform: scale(1.15); }
+.clicker img:active { transform: scale(0.9); }*/
+
+.shop {
+		padding: 10px;
+		background-color: rgb(230, 230, 230, 0.8);
+		transition: all .2s ease-in-out;
+		border-radius: 10px;
+		width: 100%;
+		margin: 10px 0px 10px 0px;	
+}
+
+.shop:hover {
+		background-color: #c7c7c7;
+		transition: all .2s ease-in-out;
+}
+
+.shop #image {
+	width: 40%;
+}
+
+.shop img {
+	padding-left: 10px;
+	width: 70%;
+}
+
+.shop #nameAndCost p {
+	margin: 0px;
+	width: 100%;
+	font-size: 32px;
+}
+
+.shop #nameAndCost p:first-of-type {
+	font-size: 48px;
+	
+}
+
+.shop #amount {
+	font-size: 56px;
+	font-family: roboto;
+	width: 10%;
+}
+
+
+#upgradeNames {
+	background-color: #bcbcbc;
+	font-size: 48px;
+	font-family: roboto;
+	border-radius: 10px;
+	width: 75%;
+	margin-left: 50px;	
+	padding: 20px;
+}
