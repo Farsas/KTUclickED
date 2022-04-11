@@ -1,19 +1,40 @@
 <?php
+session_start();
+include("connection.php");
 $uname = $_POST['uname'];
-$ip_adresas= $_SERVER['REMOTE_ADDR'];
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    $ip = $_SERVER['HTTP_CLIENT_IP'];
+} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} else {
+    $ip = $_SERVER['REMOTE_ADDR'];
+}
+$iplongas = ip2long($ip);
+$ipmd= MD5($iplongas);
 
-$conn= new mysqli('localhost','ktu_click','Slaptazodis123','ktu_click');
-if($conn->connect_error){
-	die('Prisijungimas negalimas: '.$conn->connect_error);
+$sqlasss = "SELECT * from vartotojas WHERE vardas='$uname' limit 1";
+$queryasss = mysqli_query($con, $sqlasss);
+$kiekasss = mysqli_num_rows($queryasss);
+
+if($kiekasss>0){
+	$dar = mysqli_fetch_assoc($queryasss);
+	$tikrinimas = $dar['ip_adresas'];
+	if($tikrinimas == $ipmd){
+		header("Location: zaidimas.php");
+		$_SESSION["VARDAS"] = $dar['vardas'];
+		$_SESSION["IP"] = $dar['ip_adresas'];
+	}else{
+		echo"Vardas uzimtas";
+		header("Refresh: 3;url=index.php");
+	}
 }else{
-	$stmt = $conn->prepare("insert into vartotojas(vardas,ip_adresas) 
-		values('$uname',INET_ATON('$ip_adresas'))");
-	$stmt->bind_param("si",$uname,$ip);
-	$stmt->execute();
-	echo "Viskas ok";
-	$stmt->close();
-	$conn->close();
-        header("Location: zaidimas.html");
-        exit;
+    $data = date("Y-m-d H:i:s",time());
+	$irasytiA = "INSERT INTO vartotojas (vardas,ip_adresas,data) VALUES ('$uname','$ipmd','$data')";
+	$irasytiB = "INSERT INTO duomenys (vardas) VALUES ('$uname')";
+	mysqli_query($con,$irasytiA);
+	mysqli_query($con,$irasytiB);
+    $_SESSION["VARDAS"] = "$uname";
+	$_SESSION["IP"] = "$ipmd";
+	header("Location: zaidimas.php");
 }
 ?>

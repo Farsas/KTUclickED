@@ -3,6 +3,22 @@
     width:100%;
     height:100%;
 	overflow:hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+	cursor: pointer;
+}
+
+.img {
+	user-drag: none;  
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	cursor: pointer;
 }
 .left {
 	background:yellow;
@@ -15,6 +31,7 @@
 	z-index:1;
 	overflow-x:hidden;
 	overflow-y:auto;
+	cursor: pointer;
 }
 
 .leftAlone {
@@ -28,6 +45,7 @@
 	overflow-x:hidden;
 	overflow-y:auto;
 	border-right: solid black;
+	cursor: pointer;
 }
 
 .middle {
@@ -42,6 +60,7 @@
 	border-left: solid;
 	border-right: solid;
 	overflow:hidden;
+	cursor: pointer;
 }
 
 .middle img {
@@ -49,6 +68,7 @@
 	min-width:40%;
 	max-width:40%;
 	transition: all .2s ease-in-out;
+	cursor: pointer;
 }
 
 .right {
@@ -62,6 +82,7 @@
 	z-index:1;
 	overflow:hidden;
 	text-align:center;
+	cursor: pointer;
 }
 
 .right img {
@@ -72,6 +93,7 @@
 	max-height:auto;
 	background-color:blue;
 	border-bottom:solid;
+	cursor: pointer;
 }
 
 .scoreContainer {
@@ -84,6 +106,7 @@
 	font-weight: bold;
 	border-bottom:solid;
 	overflow:hidden;
+	cursor: pointer;
 	
 }
 
@@ -91,6 +114,7 @@
 	float: right;
 	min-width:6%;
 	max-width:6%;
+	cursor: pointer;
 }
 
 .scoreContainer span:after{
@@ -103,11 +127,12 @@
   width:4%;
   position:relative;
   top:0px;
+  cursor: pointer;
 }
 
 
-/*.clicker imgredr { transform: scale(1.15); }
-.clicker img:active { transform: scale(0.9); }*/
+.clicker img:hover { transform: scale(1.15); }
+.clicker img:active { transform: scale(0.9); }
 
 .shop {
 		padding: 5%;
@@ -119,37 +144,43 @@
 		transition: all .2s ease-in-out;
 		border-radius: 10px;
 		margin: 2%;	
+		cursor: pointer;
 }
 
 .shop:hover {
 		background-color: #c7c7c7;
 		transition: all .2s ease-in-out;
+		cursor: pointer;
 }
 
 .shop #image {
 	width: 40%;
+	cursor: pointer;
 }
 
 .shop img {
 	padding-left: 10px;
 	width: 70%;
+	cursor: pointer;
 }
 
 .shop #nameAndCost p {
 	margin: 0px;
 	width: 100%;
 	font-size: 32px;
+	cursor: pointer;
 }
 
 .shop #nameAndCost p:first-of-type {
 	font-size: 48px;
-	
+	cursor: pointer;
 }
 
 .shop #amount {
 	font-size: 56px;
 	font-family: roboto;
 	width: 10%;
+	cursor: pointer;
 }
 
 
@@ -163,6 +194,7 @@
 	width: 100%;	
 	height: 7%;
 	overflow:hidden;
+	cursor: pointer;
 }
 #meniu {
 	background-color: #bcbcbc;
@@ -173,9 +205,11 @@
 	width: 100%;	
 	height: 7%;
 	overflow:hidden;
+	cursor: pointer;
 }
 p {
 	margin: 0;
+	cursor: pointer;
 }
 .loginas {
 	    align: center;
@@ -184,25 +218,26 @@ p {
 	    text-align: center;
 		padding: 1%;
 		max-width: 50%;
-		max-height: 50%;
+		height:auto;
 		background-color: rgb(16 24 34 / 80%);
 		transition: all .2s ease-in-out;
 		border:solid;
-		margin-top: 10%;	
-		margin-left: auto;
-		margin-right: auto;
+		margin: auto;	
+		cursor: pointer;
 }
 
 .loginas h3{
 	font-size: 4vw;
 	margin:0;
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 a {
 	font-size:2vw;
 	color: white;
 	text-decoration: none;
+	cursor: pointer;
 }
 ul,li{
 	text-align:left;
@@ -210,9 +245,11 @@ ul,li{
 	color: white;
 	margin-left: 12%;
     padding-left: 0;
+	cursor: pointer;
 }
 input{
 	font-size: 1.6vw;
+	cursor: pointer;
 }
 button{
 	color:white;
@@ -221,4 +258,17 @@ button{
 	font-size: 2vw;
 	background-color: #000000;
 	border-radius: 30%;
+	cursor: pointer;
+}
+.highlightas {
+	background-color: #b8cedf;
+	font-size: 2vw;
+	border-top: solid;
+	width:15%;	
+	height: 10%;
+	overflow:hidden;
+	position:fixed;
+	bottom:0;
+	right:0;
+	cursor: pointer;
 }
