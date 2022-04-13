@@ -1,23 +1,5 @@
-    @font-face {
-    font-family: 'PFDinTextPro-Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('PFDinTextPro-Regular'), url('PFDinTextPro-Regular.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'PFDinTextPro-Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('PFDinTextPro-Bold'), url('PFDinTextPro-Bold.woff') format('woff');
-    }
-html *
-{
-   font-family: 'PFDinTextPro-Regular'!important;
-}
 .body {
-    
+    background-color:#FFF12FF;
     width:100%;
     height:100%;
 	overflow:hidden;
@@ -26,7 +8,9 @@ html *
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+	cursor: pointer;
 }
+
 .img {
 	user-drag: none;  
 	user-select: none;
@@ -37,14 +21,16 @@ html *
 	cursor: pointer;
 }
 .left {
-	
+	background:yellow;
 	width: 25%;
-	position: fixed;
-	height: 100%;
-	left: 0%;
-	right: 75%;
-	top: 0%;
-	z-index: 1;
+	position:fixed;
+	height:100%;
+	left:0%;
+	right:75%;
+	top:0%;
+	z-index:1;
+	overflow-x:hidden;
+	overflow-y:auto;
 	cursor: pointer;
 }
 
@@ -65,17 +51,16 @@ html *
 .middle {
 	text-align: center;
 	width: 60%;
-	height: 100%;
+	height:100%;
+	background:green;
 	position: fixed;
 	left: 25%;
-	top: 0%;
-	z-index: 2;
-	
-	overflow: hidden;
+	top:0%;
+	z-index:2;
+	border-left: solid;
+	border-right: solid;
+	overflow:hidden;
 	cursor: pointer;
-	background-image: url(foto/kauno-technologijos-universitetas-ktu-elektronikos-rumai-6132.png);
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .middle img {
@@ -88,7 +73,7 @@ html *
 
 .right {
 	width: 15%;
-	
+	background:red;
 	height:100%;
 	position:fixed;
 	top:0;
@@ -106,21 +91,23 @@ html *
 	max-width:80%;
 	min-height:auto;
 	max-height:auto;
-	
+	background-color:blue;
+	border-bottom:solid;
 	cursor: pointer;
 }
 
 .scoreContainer {
-	background-color: rgba(47, 65, 95, 0.8)!important;
+	background-color: rgb(230, 230, 230, 0.8);
 	width: 100%;
 	max-height:16%;
 	min-height:16%;
 	text-align: center;
-	font-size: 2vw;
+	font-size: 3.3vw;
 	font-weight: bold;
+	border-bottom:solid;
 	overflow:hidden;
 	cursor: pointer;
-	max-height: 100%
+	
 }
 
 .scoreContainer img{
@@ -147,28 +134,17 @@ html *
 .clicker img:hover { transform: scale(1.15); }
 .clicker img:active { transform: scale(0.9); }
 
-.shop-box{
-	 
-	overflow-y: scroll;
-    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
-    box-sizing: content-box; /* So the width will be 100% + 17px */
-	height: 45%;
-	width: 100%;
-	overflow-x: hidden;
-}
 .shop {
-	padding: 5%;
-	width: 100%;
-	height: 15%;
-	max-width: 100%;
-	max-height: 100%;
-	background-color: rgba(230, 230, 230, 0.8);
-	transition: all .2s ease-in-out;
-	border-radius: 10px;
-	margin: 2%;
-	cursor: pointer;
-
-    
+		padding: 5%;
+		width: 96%;
+		height: 15%;
+		max-width: 100%;
+		max-height: 100%;
+		background-color: rgb(230, 230, 230, 0.8);
+		transition: all .2s ease-in-out;
+		border-radius: 10px;
+		margin: 2%;	
+		cursor: pointer;
 }
 
 .shop:hover {
@@ -177,28 +153,30 @@ html *
 		cursor: pointer;
 }
 
-
-
-.shop img {
-	
+.shop #image {
+	width: 40%;
 	cursor: pointer;
-	width: 100%;
-	max-height: 50%
 }
 
-.shop .nameAndCost p {
+.shop img {
+	padding-left: 10px;
+	width: 70%;
+	cursor: pointer;
+}
+
+.shop #nameAndCost p {
 	margin: 0px;
 	width: 100%;
 	font-size: 32px;
 	cursor: pointer;
 }
 
-.shop .nameAndCost p:first-of-type {
+.shop #nameAndCost p:first-of-type {
 	font-size: 48px;
 	cursor: pointer;
 }
 
-.shop .amount {
+.shop #amount {
 	font-size: 56px;
 	font-family: roboto;
 	width: 10%;
@@ -206,22 +184,24 @@ html *
 }
 
 
-.upgradeNames {
-	background-color: rgb(225,241,236,1);
-	font-size: 150%;
-	text-align: center;
-	
-	width: 100%;
-	height: 5%;
-	overflow: hidden;
-	cursor: pointer;
-}
-.meniu {
-	background-color: rgba(225,241,236,1);
-	font-size: 200%;
+#upgradeNames {
+	background-color: #bcbcbc;
+	font-size: 3vw;
 	text-align: center;
 	font-family: roboto;
-	
+	border-bottom: solid;
+	border-top: solid;
+	width: 100%;	
+	height: 7%;
+	overflow:hidden;
+	cursor: pointer;
+}
+#meniu {
+	background-color: #bcbcbc;
+	font-size: 3vw;
+	text-align: center;
+	font-family: roboto;
+	border-bottom: solid;
 	width: 100%;	
 	height: 7%;
 	overflow:hidden;
@@ -239,9 +219,9 @@ p {
 		padding: 1%;
 		max-width: 50%;
 		height:auto;
-		background-color: rgba(16, 24, 34, 0.8);
+		background-color: rgb(16 24 34 / 80%);
 		transition: all .2s ease-in-out;
-		
+		border:solid;
 		margin: auto;	
 		cursor: pointer;
 }
@@ -271,11 +251,19 @@ input{
 	font-size: 1.6vw;
 	cursor: pointer;
 }
-
-.highlightas {
-	background-color: rgba(47, 65, 95,0.8);
+button{
+	color:white;
+	padding: 5px;
+	margin-top: 3%;
 	font-size: 2vw;
-	
+	background-color: #000000;
+	border-radius: 30%;
+	cursor: pointer;
+}
+.highlightas {
+	background-color: #b8cedf;
+	font-size: 2vw;
+	border-top: solid;
 	width:15%;	
 	height: 10%;
 	overflow:hidden;
@@ -283,8 +271,4 @@ input{
 	bottom:0;
 	right:0;
 	cursor: pointer;
-}
-#parallax {
-  
-
 }
