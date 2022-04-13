@@ -10,106 +10,114 @@ $queryass = mysqli_query($con, $sqlass);
 $info = mysqli_fetch_assoc($queryass);
 
 ?>
-<HTML>
+<html>
 	<head>
 		<title>KTUclickED</title>
 		<link rel="stylesheet" href="mystyle.css">
 		<link rel="icon" href="foto/logoicon.png">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<meta charset="UTF-8">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>	
 	</head>
 	
 	<body>
 		<div class="left">
-			<p id="upgradeNames">Patobulinimai</p>
-			
-			<table class="shop" onclick="buyUpgradeActive1()">
+			<p class="upgradeNames">Patobulinimai</p>
+			<div class="shop-box container">
+			<div class="row">
+			<table class="shop col" onclick="buyUpgradeActive1()">
 				<tr>
-					<td id="image" ><img draggable="false" src="foto/vape.png" /></td>
-					<td id="nameAndCost">
+					<td class="image" ><img draggable="false" src="foto/vape.png" /></td>
+					<td class="nameAndCost">
 						<p>Veipas</p>
 						<p><span id="upgradeActiveCost1">10</span></p>
 					</td>
-					<td id="amount"><span id="upgradesActive1">0</span></td>
+					<td class="amount"><span id="upgradesActive1">0</span></td>
 				</tr>
 			</table>
 			
-			<table class="shop" onclick="buyUpgradeActive2()">
+			<table class="shop col" onclick="buyUpgradeActive2()">
 				<tr>
-					<td id="image"><img draggable="false" src="foto/energy.png" /></td>
-					<td id="nameAndCost">
+					<td class="image"><img draggable="false" src="foto/energy.png" /></td>
+					<td class="nameAndCost">
 						<p>RedBull</p>
 						<p><span id="upgradeActiveCost2">100</span> Kompetencijų</p>
 					</td>
-					<td id="amount"><span id="upgradesActive2">0</span></td>
+					<td class="amount"><span id="upgradesActive2">0</span></td>
 				</tr>
 			</table>
 			
-			<table class="shop" onclick="buyUpgradeActive3()">
+			<table class="shop col" onclick="buyUpgradeActive3()">
 				<tr>
-					<td id="image"><img draggable="false" src="foto/kebab.png" /></td>
-					<td id="nameAndCost">
+					<td class="image"><img draggable="false" src="foto/kebab.png" /></td>
+					<td class="nameAndCost">
 						<p>Kebabas</p>
 						<p><span id="upgradeActiveCost3">1000</span> Kompetencijų</p>
 					</td>
-					<td id="amount"><span id="upgradesActive3">0</span></td>
+					<td class="amount"><span class="upgradesActive3">0</span></td>
 				</tr>
 			</table>
-			
-			<p id="upgradeNames">Taškų generatoriai</p>
-			
-			<table class="shop" onclick="buyUpgradePassive1()">
+				</div>
+			</div>
+			<p class="upgradeNames">Taškų generatoriai</p>
+			<div class="container shop-box ">
+			<div class="row">
+			<table class="shop col" onclick="buyUpgradePassive1()">
 				<tr>
-					<td id="image"><img draggable="false" src="foto/mentorius.png" /></td>
-					<td id="nameAndCost">
+					<td class="image"><img draggable="false" src="foto/mentorius.png" /></td>
+					<td class="nameAndCost">
 						<p>Mentorius</p>
 						<p><span id="upgradePassiveCost1">20</span> Kompetencijų</p>
 					</td>
-					<td id="amount"><span id="upgradesPassive1">0</span></td>
+					<td class="amount"><span id="upgradesPassive1">0</span></td>
 				</tr>
 			</table>
 			
-			<table class="shop" onclick="buyUpgradePassive2()">
+			<table class="shop col" onclick="buyUpgradePassive2()">
 				<tr>
-					<td id="image"><img draggable="false" src="foto/tutorius.png" /></td>
-					<td id="nameAndCost">
+					<td class="image"><img draggable="false" src="foto/tutorius.png" /></td>
+					<td class="nameAndCost">
 						<p>Tutorius</p>
 						<p><span id="upgradePassiveCost2">200</span> Kompetencijų</p>
 					</td>
-					<td id="amount"><span id="upgradesPassive2">0</span></td>
+					<td class="amount"><span id="upgradesPassive2">0</span></td>
 				</tr>
 			</table>
 			
-			<table class="shop" onclick="buyUpgradePassive3()">
+			<table class="shop col" onclick="buyUpgradePassive3()">
 				<tr>
-					<td id="image"><img draggable="false" src="foto/infosa.png" /></td>
-					<td id="nameAndCost">
+					<td class="image"><img draggable="false" src="foto/infosa.png" /></td>
+					<td class="nameAndCost">
 						<p>Atstovybė</p>
 						<p><span id="upgradePassiveCost3">2000</span> Kompetencijų</p>
 					</td>
-					<td id="amount"><span id="upgradesPassive3">0</span></td>
+					<td class="amount"><span id="upgradesPassive3">0</span></td>
 				</tr>
 			</table>
+			</div>
+			</div>
 		</div>
 		
 		<div class="right">
 				<img src="foto/logo.png" /><br>
-                                <p id="meniu">Meniu</p>
-                                <ul>
-								<li><a href="apie.php">Apie <?php echo $_SESSION['VARDAS']; ?></a></li>
-								<li><a href="apie.php">Apie <?php echo $_SESSION['VARDAS']; ?></a></li>
-                                <li><a href="atsijungti.php">Atsijungti</a></li>
-								<li><button onclick="saveGame()">Saugoti</button></li>
-								<li><button onclick="resetGame()">Restartuoti</button></li>
-                                </ul>
-                <!--<div class="highlightas">Žaidėjų Skaičius:<br>
+                              	<p class="meniu">Meniu</p>
+                               <div class="btn-group-vertical btn-group-lg">
+                                
+                                <a class="btn btn-outline-dark" href="apie.php">Apie <?php echo $_SESSION['VARDAS']; ?></a>
+                                <a class="btn btn-outline-dark" href="atsijungti.php">Atsijungti</a>
+								<button class="btn btn-outline-dark" onclick="saveGame()">Saugoti</button>
+                                
+		</div>
+                <div class="highlightas">Žaidėjų Skaičius:<br>
                 <?php
-			//include("connection.php");
-			//print $kiek;
+			include("connection.php");
+			print $kiek;
                 ?>
-                </div>-->
+                </div>
 		</div>	
-			<div class="middle">
+			<div id="parallax" class="middle">
 				<div class="scoreContainer">
 					<span id="score">0</span><br>
 					<span id="auto">0</span>/sec.
@@ -249,9 +257,8 @@ $info = mysqli_fetch_assoc($queryass);
 			
 			function check(){
 				var perejo1 = <?php echo json_encode($informacija['data1']);?>;
-				if(score >= 100 && perejo1==null){
+				if(score >= 1000000 && perejo1==null){
 					sendWin1();
-					alert("Jūs laimėjote!");
 				}
 			}
 			
@@ -272,13 +279,8 @@ $info = mysqli_fetch_assoc($queryass);
 			
 			function resetGame() {
 				if (confirm("Ar tikrai norite restartuoi žaidimą?")){
-					
-					$.ajax({
-					type: "POST",
-					url: "delete.php",
-					});
-
-					saveGame();
+					var gameSave = {};
+					localStorage.setItem("gameSave", JSON.stringify(gameSave));
 					location.reload();
 				}
 			}
@@ -396,4 +398,4 @@ $info = mysqli_fetch_assoc($queryass);
 
 
 	</body>
-</HTML>
+</html>

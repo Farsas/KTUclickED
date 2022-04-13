@@ -32,12 +32,12 @@
                      <li><a href="informacija.php">Informacija</a></li>
                      <li><a href="lentele.php">Lyderiu Lentelė</a></li>
                 </ul> 
-                <!--<div class="highlightas">Žaidėjų Skaičius:<br>
+                <div class="highlightas">Žaidėjų Skaičius:<br>
                 <?php
-			//include("kintamieji.php");
-			//print $kiek;
+			include("kintamieji.php");
+			print $kiek;
                 ?>
-                </div>-->
+                </div>
 		</div>		
 
 

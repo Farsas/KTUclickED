@@ -31,9 +31,9 @@ if(empty($kintamasis)){
                      <ul><li><a href="zaidimas.php">Žaidimas</a></li>
                      <li><a href="atsijungti.php">Atsijungti</a></li>
                 </ul>  
-                <!--<div class="highlightas">Žaidėjų Skaičius:<br>
-                <?php //print $kiek;?>
-                </div>-->
+                <div class="highlightas">Žaidėjų Skaičius:<br>
+                <?php print $kiek;?>
+                </div>
 		</div>	
 
 
