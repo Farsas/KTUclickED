@@ -22,23 +22,22 @@
                 </div>
 		
 		<div class="right">
-                <a href="index.php">
-	             <img src="foto/logo.png"><br></a>
-                <p id="meniu"> 
-                <b>Meniu</b>
-                </p>
-                <ul>
-                     <li><a href="index.php">Prisijungti</a></li>
-                     <li><a href="informacija.php">Informacija</a></li>
-                     <li><a href="lentele.php">Lyderiu Lentelė</a></li>
-                </ul> 
+				<img src="foto/logo.png" /><br>
+                              	<p class="meniu">Meniu</p>
+                               <div class="btn-group-vertical btn-group-lg baton-grup">
+                                
+                                <a class="btn btn-outline-dark" href="apie.php">Apie <?php echo $_SESSION['VARDAS']; ?></a>
+                                <a class="btn btn-outline-dark" href="atsijungti.php">Atsijungti</a>
+								
+                                
+		</div>
                 <div class="highlightas">Žaidėjų Skaičius:<br>
                 <?php
-			include("kintamieji.php");
+			include("connection.php");
 			print $kiek;
                 ?>
                 </div>
-		</div>		
+		</div>	
 
 
 	</body>
