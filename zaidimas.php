@@ -279,9 +279,10 @@ $info = mysqli_fetch_assoc($queryass);
 			
 			function resetGame() {
 				if (confirm("Ar tikrai norite restartuoi žaidimą?")){
-					var gameSave = {};
-					localStorage.setItem("gameSave", JSON.stringify(gameSave));
-					location.reload();
+					$.ajax({
+					type: "POST",
+					url: "delete.php",
+					});
 				}
 			}
 			
