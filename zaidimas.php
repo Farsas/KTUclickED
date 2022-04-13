@@ -23,6 +23,7 @@ $info = mysqli_fetch_assoc($queryass);
 	</head>
 	
 	<body>
+	
 		<div class="left">
 			<p class="upgradeNames">Patobulinimai</p>
 			<div class="shop-box container">
@@ -32,7 +33,7 @@ $info = mysqli_fetch_assoc($queryass);
 					<td class="image" ><img draggable="false" src="foto/vape.png" /></td>
 					<td class="nameAndCost">
 						<p>Veipas</p>
-						<p><span id="upgradeActiveCost1">10</span></p>
+						<p><span id="upgradeActiveCost1">10</span> Kompetencijų</p>
 					</td>
 					<td class="amount"><span id="upgradesActive1">0</span></td>
 				</tr>
@@ -56,7 +57,7 @@ $info = mysqli_fetch_assoc($queryass);
 						<p>Kebabas</p>
 						<p><span id="upgradeActiveCost3">1000</span> Kompetencijų</p>
 					</td>
-					<td class="amount"><span class="upgradesActive3">0</span></td>
+					<td class="amount"><span id="upgradesActive3">0</span></td>
 				</tr>
 			</table>
 				</div>
@@ -103,7 +104,7 @@ $info = mysqli_fetch_assoc($queryass);
 		<div class="right">
 				<img src="foto/logo.png" /><br>
                               	<p class="meniu">Meniu</p>
-                               <div class="btn-group-vertical btn-group-lg">
+                               <div class="btn-group-vertical btn-group-lg baton-grup">
                                 
                                 <a class="btn btn-outline-dark" href="apie.php">Apie <?php echo $_SESSION['VARDAS']; ?></a>
                                 <a class="btn btn-outline-dark" href="atsijungti.php">Atsijungti</a>
@@ -125,7 +126,9 @@ $info = mysqli_fetch_assoc($queryass);
                                 <div class="clicker">
 				    <img draggable="false" src="foto/ktumygtukas.png" onclick="addToScore(clickingPower)" />
                                 </div>
-			</div>			
+			</div>
+		
+									
 		<script type= "text/javascript">
 			var score = 0;
 			var clickingPower = 1;
