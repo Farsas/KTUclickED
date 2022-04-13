@@ -1,0 +1,324 @@
+AWSTATS DATA FILE 7.5 (build 20160127)
+# If you remove this file, all statistics for date 202203 will be lost/reset.
+# Last config file used to build this data file was /home/ktu/domains/ktu.us.lt/awstats/.data/awstats.ktu.us.lt.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 30
+POS_GENERAL 2091                
+POS_TIME 2778                
+POS_VISITOR 3535                
+POS_DAY 3824                
+POS_DOMAIN 3977                
+POS_LOGIN 4209                
+POS_ROBOT 4364                
+POS_WORMS 4496                
+POS_EMAILSENDER 4627                
+POS_EMAILRECEIVER 4770                
+POS_SESSION 4846                
+POS_SIDER 4998                
+POS_FILETYPES 5903                
+POS_DOWNLOADS 6085                
+POS_OS 6133                
+POS_BROWSER 6230                
+POS_SCREENSIZE 6402                
+POS_UNKNOWNREFERER 6476                
+POS_UNKNOWNREFERERBROWSER 6563                
+POS_ORIGIN 6645                
+POS_SEREFERRALS 6784                
+POS_PAGEREFS 6928                
+POS_SEARCHWORDS 7076                
+POS_KEYWORDS 7228                
+POS_MISC 2441                
+POS_ERRORS 7287                
+POS_CLUSTER 4065                
+POS_SIDER_403 7424                
+POS_SIDER_400 7545                
+POS_SIDER_404 7627                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20220401000405 3344 789315 15016961437091
+FirstTime 20220331152429
+LastTime 20220331235858
+LastUpdate 20220401003405 3344 0 3343 0 0
+TotalVisits 5                   
+TotalUnique 5                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 5                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 15 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 0 0 0 0 0 0
+10 0 0 0 0 0 0
+11 0 0 0 0 0 0
+12 0 0 0 0 0 0
+13 0 0 0 0 0 0
+14 0 0 0 0 0 0
+15 86 328 865938 2 665 287982
+16 32 129 2018056 0 0 0
+17 6 37 672630 0 0 0
+18 11 57 805923 0 0 0
+19 33 109 1102254 39 55 12351
+20 96 256 5521008 3 5 1039
+21 37 90 1616435 1 1 223
+22 275 696 9159749 28 30 13263
+23 302 828 6980035 38 57 142381
+END_TIME
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 5
+158.129.26.199 758 2179 22998843 20220331235858
+213.226.178.35 48 106 889543 20220331234210
+158.129.19.16 36 92 2386258 20220331234445
+78.63.221.98 32 146 2450222 20220331235813
+193.219.171.1 4 7 17162 20220331234330
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 1
+20220331 878 2530 28742028 5
+END_DAY
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 878 2530 28742028
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Session range - Number of visits
+BEGIN_SESSION 2
+1h+ 4
+0s-30s 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 23
+/ 400 352086 5 1
+/zaidimas.html 162 283687 0 2
+/prisijungti.html 85 49458 0 0
+/phpmyadmin/ajax.php 48 91337 0 0
+/phpmyadmin/ 41 95827 0 0
+/phpmyadmin/tbl_structure.php 21 179123 0 0
+/phpmyadmin/navigation.php 21 54536 0 0
+/phpmyadmin/sql.php 19 200894 0 0
+/phpmyadmin/phpmyadmin.css.php 18 380253 0 0
+/prisijungti.php 17 3583 0 2
+/informacija.html 7 2982 0 0
+/phpmyadmin/js/whitelist.php 4 2449 0 0
+/icons/ 1 7640 0 0
+/phpmyadmin/version_check.php 1 500 0 0
+/phpmyadmin/lint.php 3 1567 0 0
+/phpmyadmin/tbl_change.php 2 14946 0 0
+/phpmyadmin/tbl_indexes.php 2 6927 0 0
+/phpmyadmin/tbl_create.php 2 25649 0 0
+/phpmyadmin/db_structure.php 4 16770 0 0
+/test.html 12 3763 0 0
+/phpmyadmin/tbl_sql.php 3 15198 0 0
+/phpmyadmin/js/messages.php 4 39785 0 0
+/phpmyadmin/tbl_select.php 1 3986 0 0
+END_SIDER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 6
+css 347 497658 0 0
+php 520 1447933 0 0
+png 1012 24418364 0 0
+html 358 385013 0 0
+js 183 1963742 0 0
+gif 110 29318 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 2
+linuxandroid 7 4
+win10 2523 874
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 5
+chrome100.0.4896.60 106 48
+chrome99.0.4844.84 2179 758
+chrome96.0.4664.104 7 4
+firefox98.0 146 32
+opera84.0.4316.52 92 36
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 424 706
+From1 0 0
+From2 0 0
+From3 0 0
+From4 454 1824
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+403 7 1647
+302 13 2994
+500 26 1359
+301 6 1965
+404 738 307886
+END_ERRORS
+
+# URL with 403 errors - Hits - Last URL referrer
+BEGIN_SIDER_403 1
+/foto/ 7 https://ktu.us.lt/mystyle.css
+END_SIDER_403
+
+# URL with 400 errors - Hits - Last URL referrer
+BEGIN_SIDER_400 0
+END_SIDER_400
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 46
+/lentele.html 1 https://ktu.us.lt/informacija.html
+/informacija.html 5 https://ktu.us.lt/index.html
+/foto/s 1 https://ktu.us.lt/mystyle.css
+/fo/gluten_free.png 1 https://ktu.us.lt/mystyle.css
+/icons/vape.png 54 http://ktu.us.lt/
+/fo 2 https://ktu.us.lt/mystyle.css
+/foto/comp.pn 3 https://ktu.us.lt/mystyle.css
+/.images/gluten_free.png 1 https://ktu.us.lt/mystyle.css
+/foto/comp. 4 https://ktu.us.lt/mystyle.css
+/image/gluten_free.png 1 https://ktu.us.lt/mystyle.css
+/icons/logo.png 83 http://ktu.us.lt/
+/foto/co 2 https://ktu.us.lt/mystyle.css
+/icons/logoicon.png 1 http://ktu.us.lt/
+/foto/c 3 https://ktu.us.lt/mystyle.css
+/i/gluten_free.png 1 https://ktu.us.lt/mystyle.css
+/icons/kebab.png 82 http://ktu.us.lt/
+/images/gluten_free.png 1 https://ktu.us.lt/mystyle.css
+/index.html 4 https://ktu.us.lt/zaidimas.html
+/foto/comp 4 https://ktu.us.lt/mystyle.css
+/icons/tutorius.png 82 http://ktu.us.lt/
+/prisijungti.html 2 http://ktu.us.lt/
+/foto/comp.o 1 https://ktu.us.lt/mystyle.css
+/foto/com 1 https://ktu.us.lt/mystyle.css
+/foto/com.png 1 https://ktu.us.lt/mystyle.css
+/your-image-url.png 2 https://ktu.us.lt/mystyle.css
+/ima/gluten_free.png 1 https://ktu.us.lt/mystyle.css
+/img_avatar2.png 2 https://ktu.us.lt/index.html
+/vape.png 10 http://ktu.us.lt/
+/yourimage.jpg 1 https://ktu.us.lt/mystyle.css
+/icons/energy.png 83 http://ktu.us.lt/
+/f 3 https://ktu.us.lt/mystyle.css
+/f/gluten_free.png 1 https://ktu.us.lt/mystyle.css
+/foto/comp.p 3 https://ktu.us.lt/mystyle.css
+/icons/ktumygtukas.png 82 http://ktu.us.lt/
+/domains/ktu.us.lt/public_html/icons/vape.png 20 http://ktu.us.lt/
+/foto/gluten_free.png 1 https://ktu.us.lt/mystyle.css
+/icons/mentorius.png 82 http://ktu.us.lt/
+/foto/comp/ 1 https://ktu.us.lt/mystyle.css
+/icons/infosa.png 82 http://ktu.us.lt/
+/foto/c.png 1 https://ktu.us.lt/mystyle.css
+/action_page.php 12 https://ktu.us.lt/index.html
+/..images/gluten_free.png 2 https://ktu.us.lt/mystyle.css
+/index.php 5 https://ktu.us.lt/zaidimas.html
+/foto 1 -
+/foto/sc 1 https://ktu.us.lt/mystyle.css
+/gluten_free.png 1 https://ktu.us.lt/mystyle.css
+END_SIDER_404
