@@ -1,0 +1,9 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML><HEAD>
+<TITLE>404 Tokio puslapio nera</TITLE>
+</HEAD><BODY>
+<H1>404 Ziurek kur eini</H1>
+Tokio puslapio nera...
+<HR>
+<I><!--#echo var="HTTP_HOST" --></I>
+</BODY></HTML>
