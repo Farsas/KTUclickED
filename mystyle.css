@@ -75,9 +75,10 @@ html *
 	
 	overflow: hidden;
 	cursor: pointer;
-	background-image: url(foto/kauno-technologijos-universitetas-ktu-elektronikos-rumai-6132.png);
+	background-image: url(foto/11katedrasss.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .middle img {
@@ -124,6 +125,7 @@ html *
 	overflow:hidden;
 	cursor: pointer;
 	max-height: 100%;
+	color: white;
 }
 
 .scoreContainer img{

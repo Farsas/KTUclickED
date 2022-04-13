@@ -111,12 +111,12 @@ $info = mysqli_fetch_assoc($queryass);
 								<button class="btn btn-outline-dark" onclick="saveGame()">Saugoti</button>
                                 
 		</div>
-                <div class="highlightas">Žaidėjų Skaičius:<br>
+                <!--<div class="highlightas">Žaidėjų Skaičius:<br>
                 <?php
-			include("connection.php");
-			print $kiek;
+					//include("connection.php");
+					//print $kiek;
                 ?>
-                </div>
+                </div>-->
 		</div>	
 			<div id="parallax" class="middle">
 				<div class="scoreContainer">
@@ -281,7 +281,7 @@ $info = mysqli_fetch_assoc($queryass);
 			}
 			
 			function resetGame() {
-				if (confirm("Ar tikrai norite restartuoi žaidimą?")){
+				if (confirm("Ar tikrai norite restartuoti žaidimą?")){
 					$.ajax({
 					type: "POST",
 					url: "delete.php",

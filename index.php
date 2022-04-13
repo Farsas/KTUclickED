@@ -31,12 +31,12 @@
 								
                                 
 		</div>
-                <div class="highlightas">Žaidėjų Skaičius:<br>
+                <!--<div class="highlightas">Žaidėjų Skaičius:<br>
                 <?php
-			include("connection.php");
-			print $kiek;
+					//include("connection.php");
+					//print $kiek;
                 ?>
-                </div>
+                </div>-->
 		</div>	
 
 
