@@ -1,0 +1,5 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.ktu.us.lt$ [NC]
+RewriteRule ^(.*)$ http://ktu.us.lt/awstats/$1 [R=301,L]

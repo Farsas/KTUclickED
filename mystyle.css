@@ -16,9 +16,6 @@ html *
 {
    font-family: 'PFDinTextPro-Regular'!important;
 }
-
-
-
 .body {
     
     width:100%;
@@ -29,7 +26,6 @@ html *
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
-	user-drag: none;
 	
 }
 .img {
@@ -52,19 +48,10 @@ html *
 	z-index: 1;
 	cursor: pointer;
 	padding-bottom: 20px;
-	
-}
-.left-shadow{
-	
--webkit-box-shadow: 5px 0px 35px 47px rgba(0,0,0,0.75);
--moz-box-shadow: 5px 0px 35px 47px rgba(0,0,0,0.75);
-	box-shadow: 5px 0px 35px 47px rgba(0,0,0,0.75);
-	z-index: 40;
-	
 }
 
 .leftAlone {
-	background:rgba(230, 230, 230, 0.8);
+	background:#8888b2;
 	width: 85%;
 	position:fixed;
 	height:100%;
@@ -73,7 +60,7 @@ html *
 	z-index:2;
 	overflow-x:hidden;
 	overflow-y:auto;
-	
+	border-right: solid black;
 	cursor: pointer;
 }
 
@@ -88,13 +75,9 @@ html *
 	
 	overflow: hidden;
 	cursor: pointer;
-	background-image: url(foto/11katedrasss.png);
+	background-image: url(foto/kauno-technologijos-universitetas-ktu-elektronikos-rumai-6132.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	box-shadow: 34px 6px 20px -31px rgba(0,0,0,0.75) inset;
--webkit-box-shadow: 34px 6px 20px -31px rgba(0,0,0,0.75) inset;
--moz-box-shadow: 34px 6px 20px -31px rgba(0,0,0,0.75) inset;
 }
 
 .middle img {
@@ -103,7 +86,6 @@ html *
 	max-width:40%;
 	transition: all .2s ease-in-out;
 	cursor: pointer;
-	
 }
 
 .right {
@@ -119,10 +101,6 @@ html *
 	text-align:center;
 	cursor: pointer;
 	padding-bottom: 50px;
-	box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.75);
-	z-index: 3;
 }
 
 .right img {
@@ -145,8 +123,7 @@ html *
 	font-weight: bold;
 	overflow:hidden;
 	cursor: pointer;
-	max-height: 100%;
-	color: white;
+	max-height: 100%
 }
 
 .scoreContainer img{
@@ -168,21 +145,7 @@ html *
   top:0px;
   cursor: pointer;
 }
-.clicker img{
-	animation:spin 20s linear infinite;
-    padding: 0;
-	margin-top: 5vw;
-	box-shadow:
-        inset 0 0 50px #fff,
-        inset 20px 0 60px violet,
-        inset -20px 0 60px blue,
-        inset 20px 0 300px violet,
-        inset -20px 0 300px blue,
-          0 0 50px #fff,
-          -10px 0 60px violet,
-          10px 0 60px blue;
-}
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 
 .clicker img:hover { transform: scale(1.15); }
 .clicker img:active { transform: scale(0.9); }
@@ -285,7 +248,7 @@ p {
 		padding: 1%;
 		max-width: 50%;
 		height:auto;
-		background-color: rgba(47, 65, 95,0.8);
+		background-color: rgba(16, 24, 34, 0.8);
 		transition: all .2s ease-in-out;
 		
 		margin: auto;	

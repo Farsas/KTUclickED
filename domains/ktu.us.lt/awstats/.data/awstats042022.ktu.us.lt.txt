@@ -1,0 +1,346 @@
+AWSTATS DATA FILE 7.5 (build 20160127)
+# If you remove this file, all statistics for date 202204 will be lost/reset.
+# Last config file used to build this data file was /home/ktu/domains/ktu.us.lt/awstats/.data/awstats.ktu.us.lt.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 30
+POS_GENERAL 2091                
+POS_TIME 2768                
+POS_VISITOR 7155                
+POS_DAY 8128                
+POS_DOMAIN 3518                
+POS_LOGIN 3753                
+POS_ROBOT 3908                
+POS_WORMS 4113                
+POS_EMAILSENDER 4244                
+POS_EMAILRECEIVER 4387                
+POS_SESSION 8469                
+POS_SIDER 8664                
+POS_FILETYPES 4522                
+POS_DOWNLOADS 4725                
+POS_OS 4773                
+POS_BROWSER 4906                
+POS_SCREENSIZE 5323                
+POS_UNKNOWNREFERER 5397                
+POS_UNKNOWNREFERERBROWSER 5587                
+POS_ORIGIN 5669                
+POS_SEREFERRALS 5811                
+POS_PAGEREFS 5966                
+POS_SEARCHWORDS 6114                
+POS_KEYWORDS 6266                
+POS_MISC 2430                
+POS_ERRORS 6325                
+POS_CLUSTER 3609                
+POS_SIDER_403 6467                
+POS_SIDER_400 6764                
+POS_SIDER_404 6846                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20220412104552 9 1681 12955561790651
+FirstTime 20220401000405
+LastTime 20220412104552
+LastUpdate 20220413003157 9 0 9 0 0
+TotalVisits 45                  
+TotalUnique 22                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 22                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 235 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 96 288 4116297 28 39 98152
+1 165 417 5727312 11 33 208697
+2 178 378 3251946 11 34 222481
+3 65 250 2698902 9 11 12281
+4 29 133 1360705 11 12 10159
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 0 0 0 0 0 0
+10 10 22 786215 1 1 409
+11 19 30 794327 3 3 1197
+12 50 296 4310672 10 18 80128
+13 319 830 7069804 51 60 94481
+14 315 1090 12740541 66 89 224562
+15 1990 2890 11647904 83 131 406758
+16 1244 1828 12110980 49 80 283106
+17 1031 2205 17842600 190 242 489181
+18 762 2257 25682599 193 211 184053
+19 374 978 7506517 87 91 55815
+20 17 40 70437 0 0 0
+21 1 1 912 1 1 2766
+22 3 5 16702 0 0 0
+23 16 66 496744 4 5 10782
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 6684 14004 118232116
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 2
+curl 2 488 20220409235430 0
+bot[\s_+:,\.\;\/\\-] 1 1362 20220401021714 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+css 977 2274876 0 0
+php 6587 14367204 0 0
+png 4702 84323825 0 0
+html 88 59054 0 0
+js 1588 17169520 0 0
+Unknown 9 3645 0 0
+gif 53 33992 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+linuxandroid 199 59
+win8 7 5
+Unknown 9 9
+win10 13786 6609
+linux 3 2
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 16
+firefox99.0 41 20
+msie11.0 22 11
+chrome96.0.4664.104 15 4
+mozilla 9 9
+chrome98.0.4758.101 3 1
+chrome99.0.4844.88 184 56
+chrome47.0.2526.80 7 5
+chrome92.0.4515.107 3 1
+opera85.0.4341.65 63 50
+opera84.0.4316.52 24 12
+chrome100.0.4896.75 8426 4796
+firefox91.0 182 162
+chrome100.0.4896.60 1199 422
+chrome99.0.4844.84 2120 706
+firefox98.0 1702 428
+chrome99.0.4844.74 4 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20220409235435
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 2249 4722
+From1 2 2
+From2 2 2
+From3 0 0
+From4 4431 9278
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+403 37 11943
+302 475 163063
+500 261 15019
+404 19 5634
+301 16 5846
+END_ERRORS
+
+# URL with 403 errors - Hits - Last URL referrer
+BEGIN_SIDER_403 7
+/phpmyadmin/ajax.php 2 -
+/phpmyadmin/navigation.php 1 -
+/phpmyadmin/tbl_structure.php 6 -
+/phpmyadmin/tbl_row_action.php 1 -
+/phpmyadmin/sql.php 6 -
+/phpmyadmin/index.php 2 -
+/phpmyadmin/ 19 https://ktu.us.lt:2222/
+END_SIDER_403
+
+# URL with 400 errors - Hits - Last URL referrer
+BEGIN_SIDER_400 0
+END_SIDER_400
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 0
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 22
+158.129.26.199 5765 11428 98809411 20220412010913
+158.129.26.197 459 1765 11090308 20220411163849
+84.15.53.176 162 182 908722 20220408193832
+78.158.10.47 114 244 1555967 20220408193930
+158.129.19.16 62 87 1655808 20220411163722
+90.131.42.85 50 164 864459 20220408193828
+158.129.7.76 26 36 792330 20220411161002
+213.226.178.35 24 44 951978 20220412104552 20220412104552 /
+90.131.41.24 5 16 774902 20220407215153
+193.219.171.1 4 15 762605 20220401190249
+64.78.149.164 1 1 405 20220409235435
+90.131.45.19 1 4 16217 20220401144806
+158.129.21.141 1 4 16214 20220401005324
+195.12.177.7 1 3 14800 20220411160233
+18.116.86.117 1 1 405 20220409235434
+63.117.14.74 1 3 14750 20220407182423
+18.159.196.172 2 2 810 20220409235434
+3.120.130.29 1 1 405 20220409235429
+66.133.109.36 1 1 405 20220409235427
+34.219.87.132 1 1 405 20220409235427
+3.19.56.43 1 1 405 20220409235426
+34.221.255.206 1 1 405 20220409235435
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 11
+20220401 878 2643 31187658 6
+20220402 5 9 30174 2
+20220403 1 3 14232 1
+20220404 27 48 819062 2
+20220405 701 1720 21322556 2
+20220406 357 969 10630068 2
+20220407 4234 7727 45420776 6
+20220408 335 610 4112941 4
+20220409 16 66 496744 9
+20220411 119 191 4037855 8
+20220412 11 18 160050 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+1h+ 10
+5mn-15mn 4
+2mn-5mn 3
+0s-30s 22
+30s-2mn 2
+30mn-1h 3
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 35
+/saugoti.php 2449 162953 0 1
+/zaidimas.php 945 2027021 0 9
+/ 645 459053 31 12
+/phpmyadmin/ajax.php 459 889439 0 0
+/phpmyadmin/ 430 1350581 3 2
+/laimejo.php 248 40872 0 0
+/phpmyadmin/sql.php 245 2927332 0 0
+/lentele.php 207 136561 1 7
+/phpmyadmin/navigation.php 195 526447 0 0
+/apie.php 192 98642 0 1
+/informacija.html 3 1224 0 0
+/phpmyadmin/js/whitelist.php 45 24098 0 1
+/prisijungti.php 68 13522 1 0
+/phpmyadmin/server_databases.php 1 3793 0 0
+/phpmyadmin/lint.php 6 2694 0 0
+/phpmyadmin/tbl_change.php 10 81655 0 0
+/phpmyadmin/url.php 1 159 0 0
+/informacija.php 59 29909 0 2
+/phpmyadmin/phpmyadmin.css.php 171 3613490 0 0
+/phpmyadmin/db_structure.php 11 56414 0 0
+/phpmyadmin/tbl_sql.php 1 5355 0 0
+/zaidimas.html 12 23775 1 1
+/kas.php 4 663 0 0
+/phpmyadmin/tbl_addfield.php 9 61204 0 0
+/phpmyadmin/tbl_structure.php 132 1140666 0 0
+/.well-known/acme-challenge/MBKdjT0C_2OWzM_i-29yWK_hTScifANdd2tPXgZnHiY 5 2025 5 4
+/phpmyadmin/version_check.php 15 10319 0 0
+/test.php 12 6846 0 0
+/phpmyadmin/tbl_indexes.php 1 3458 0 0
+/phpmyadmin/tbl_create.php 4 126304 0 0
+/test.html 24 4492 0 0
+/phpmyadmin/tbl_replace.php 8 76446 0 0
+/phpmyadmin/js/messages.php 47 469301 0 0
+/phpmyadmin/tbl_row_action.php 16 51570 0 0
+/.well-known/acme-challenge/VglvPVc2ZBRPXAesdSZzOV14gAzPuRNSWTwJa7q7Q_E 4 1620 3 4
+END_SIDER
