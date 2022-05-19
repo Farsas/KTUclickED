@@ -1,0 +1,561 @@
+    @font-face {
+    font-family: 'PFDinTextPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextPro-Regular'), url('PFDinTextPro-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'PFDinTextPro-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextPro-Bold'), url('PFDinTextPro-Bold.woff') format('woff');
+    }
+html *
+{
+   font-family: 'PFDinTextPro-Regular'!important;
+}
+.body {
+    
+    width:100%;
+    height:100%;
+	overflow:hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+	
+}
+.img {
+	user-drag: none;  
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	cursor: pointer;
+}
+.clicker{
+	margin-left:auto;
+	margin-right:auto;
+}
+.clicker img{
+	animation:spin 20s linear infinite;
+    padding: 0;
+	margin-top: 5vw;
+	box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 60px violet,
+        inset -20px 0 60px blue,
+        inset 20px 0 300px violet,
+        inset -20px 0 300px blue,
+          0 0 50px #fff,
+          -10px 0 60px violet,
+          10px 0 60px blue;
+	transition: all .2s ease-in-out;
+	position: relative;
+		
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+/*
+.clicker img:hover { transform: scale(1.5); }
+.clicker img:active { transition: scale(0.9); }
+*/
+
+
+.left {
+	
+	width: 25%;
+	position: absolute;
+	height: 100%;
+	left: 0%;
+	right: 75%;
+	top: 0%;
+	
+	cursor: pointer;
+	padding-bottom: 20px;
+}
+.left-shadow{
+
+-webkit-box-shadow: 5px 0px 35px 47px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 0px 35px 47px rgba(0,0,0,0.75);
+	box-shadow: 5px 0px 35px 47px rgba(0,0,0,0.75);
+	z-index: 40;
+
+}
+
+.leftAlone {
+	background:rgba(230, 230, 230, 0.8);
+	width: 85%;
+	position:fixed;
+	height:100%;
+	left:0;
+	top:0%;
+	z-index:2;
+	overflow-x:hidden;
+	overflow-y:auto;
+
+	cursor: pointer;
+	box-shadow: 34px 6px 20px -31px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 34px 6px 20px -31px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 34px 6px 20px -31px rgba(0,0,0,0.75) inset;
+}
+
+.middle1 {
+	text-align: center;
+	width: 60%;
+	height: 100%;
+	position: fixed;
+	left: 25%;
+	top: 0%;
+	z-index: 2;
+	
+	overflow: hidden;
+	cursor: pointer;
+	background-image: url(foto/katedra4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.middle1 img {
+	min-width:40%;
+	max-width:40%;
+	cursor: pointer;
+}
+
+.middle2 {
+	text-align: center;
+	width: 60%;
+	height: 100%;
+	position: fixed;
+	left: 25%;
+	top: 0%;
+	z-index: 2;
+	
+	overflow: hidden;
+	cursor: pointer;
+	background-image: url(foto/katedra2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.middle2 img {
+	min-width:40%;
+	max-width:40%;
+	cursor: pointer;
+}
+
+.middle3 {
+	text-align: center;
+	width: 60%;
+	height: 100%;
+	position: fixed;
+	left: 25%;
+	top: 0%;
+	z-index: 2;
+	
+	overflow: hidden;
+	cursor: pointer;
+	background-image: url(foto/katedra3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.middle3 img {
+	min-width:40%;
+	max-width:40%;
+	cursor: pointer;
+}
+
+.middle4 {
+	text-align: center;
+	width: 60%;
+	height: 100%;
+	position: relative;
+	left: 25%;
+	top: 0%;
+	
+	
+	overflow: hidden;
+	cursor: pointer;
+	background-image: url(foto/katedra1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.middle4 img {
+	min-width:40%;
+	max-width:40%;
+	cursor: pointer;
+}
+
+.middle0 {
+	text-align: center;
+	width: 60%;
+	height: 100%;
+	position: fixed;
+	left: 25%;
+	top: 0%;
+	z-index: 2;
+	
+	overflow: hidden;
+	cursor: pointer;
+	background-image: url(foto/katedra5.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.middle0 img {
+	min-width:40%;
+	max-width:40%;
+	cursor: pointer;
+}
+
+.right {
+	width: 15%;
+	
+	height:100%;
+	position:absolute;
+	top:0;
+	right: 0%;
+	left: 85%;
+	z-index:1;
+	overflow:hidden;
+	text-align:center;
+	cursor: pointer;
+	padding-bottom: 50px;
+	box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.right img {
+	padding: 12.5% 10% 12% 10%;
+	min-width:80%;
+	max-width:80%;
+	min-height:auto;
+	max-height:auto;
+	
+	cursor: pointer;
+	
+}
+
+.scoreContainer {
+	background-color: rgba(47, 65, 95, 0.8)!important;
+	width: 100%;
+	max-height:16%;
+	min-height:16%;
+	text-align: center;
+	font-size: 2vw;
+	font-weight: bold;
+	overflow:hidden;
+	cursor: pointer;
+	max-height: 100%;
+	color: white;
+}
+
+.scoreContainer img{
+	float: right;
+	min-width:6%;
+	max-width:6%;
+	cursor: pointer;
+}
+
+.scoreContainer span:after{
+  content: "";
+  background-image:url(foto/comp.png);
+  background-size: 100% 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  height:4%;
+  width:4%;
+  position:relative;
+  top:0px;
+  cursor: pointer;
+}
+
+
+#clicker > .number {
+	z-index: 99;
+	font-size: 24px;
+	color: white;
+	position: absolute;
+}
+
+.shop-box{
+	 
+	overflow-y: scroll;
+    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+	height: 45%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.shop {
+	padding: 5%;
+	width: 100%;
+	height: 15%;
+	max-width: 100%;
+	max-height: 100%;
+	background-color: rgba(230, 230, 230, 0.8);
+	transition: all .2s ease-in-out;
+	border-radius: 10px;
+	margin: 10px;
+	cursor: pointer;
+
+    
+}
+
+.shop:hover {
+		background-color: #c7c7c7;
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+}
+
+
+
+.shop img {
+	
+	cursor: pointer;
+	width: 100%;
+	
+	padding: 5px;
+}
+
+.shop .nameAndCost p {
+	margin: 0px;
+	width: 100%;
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.shop .nameAndCost p:first-of-type {
+	font-size: 48px;
+	cursor: pointer;
+}
+
+.shop .amount {
+	font-size: 56px;
+	font-family: roboto;
+	width: 10%;
+	cursor: pointer;
+}
+
+
+.upgradeNames {
+	background-color: rgba(225,241,236,1);
+	font-size: 150%;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+	height: 5%;
+	overflow: hidden;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.upgradeNamesTop {
+	background-color: rgba(225,241,236,1);
+	font-size: 150%;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+	height: 5%;
+	overflow: hidden;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.baton-grup{
+	width: 100%;
+	padding: 10px;
+}
+.meniu {
+	background-color: rgba(225,241,236,1);
+	font-size: 200%;
+	text-align: center;
+	font-family: roboto;
+	font-weight: bold;
+	width: 100%;	
+	height: 7%;
+	overflow:hidden;
+	cursor: pointer;
+}
+p {
+	margin: 0;
+	cursor: pointer;
+}
+.loginas {
+	    align: center;
+	    font-size: 3vw;
+	    color:black;
+	    text-align: center;
+		padding: 1%;
+		max-width: 50%;
+		height:auto;
+		background-color: rgb(255 255 255 / 80%);
+		transition: all .2s ease-in-out;
+		
+		margin: auto;	
+		cursor: pointer;
+		border-radius: 10px;
+		border: 1px solid #000;
+}
+
+.loginas h3{
+	font-size: 4vw;
+	margin:0;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.loginas h2{
+	font-size: 3vw;
+	margin:0;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a {
+	font-size:2vw;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+ul,li{
+	text-align:left;
+	font-size:2vw;
+	color: white;
+	margin-left: 12%;
+    padding-left: 0;
+	cursor: pointer;
+}
+input{
+	font-size: 1.6vw;
+	cursor: pointer;
+}
+
+.highlightas {
+	background-color: rgba(225,241,236,1);
+	line-height:2vw;
+	text-align: center;
+	font-family: roboto;
+	font-size: 2vw;
+	width:15%;	
+	height: 10%;
+	overflow:hidden;
+	position:fixed;
+	bottom:0;
+	right:0;
+	cursor: pointer;
+	padding-top: auto;
+	padding-bottom: auto;
+}
+#parallax {
+  
+
+}
+.switch {
+  margin-top:1.45%;
+  position: fixed;
+  display: inline-block;
+  width: 3.2vw;
+  height: 2.2vw;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 8%;
+  bottom: 17%;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 40%;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+table.lentele{
+  font-size:2vw;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table.lentele th {
+	border:1px solid black;
+	text-align:center;
+}
+
+table.lentele tr {
+	border:1px solid black;
+}
+
+table.lentele td {
+	border:1px solid black;
+	padding-left:1%;
+}
+table.lentele img{
+	
+	width:12%;
+}
+
+
