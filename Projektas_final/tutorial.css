@@ -1,0 +1,97 @@
+    #bg_black{
+
+	position: fixed; 
+	background-color: black;
+
+
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding:0;
+
+
+	opacity: 0.8;
+	z-index:5;
+    }
+	.tutorial{
+		color:white;
+		z-index:10;
+		position:absolute;
+		font-size:50px;
+	}
+	#tut1{
+		top:30%;
+		margin-left: auto;
+       margin-right: auto;
+	   left: 0;
+right: 0;
+text-align: center;
+	}
+	#tut2{
+		
+		top:30%;
+		margin-left: auto;
+       margin-right: auto;
+	   left: 0;
+right: 0;
+text-align: center;
+	}
+	#tut3{
+		
+		top:30%;
+		margin-left: auto;
+       margin-right: auto;
+	   left: 0;
+right: 0;
+text-align: center;
+	}
+	#tut4{
+		
+		top:30%;
+		margin-left: auto;
+       margin-right: auto;
+	   left: 0;
+right: 0;
+text-align: center;
+	}
+	#tut5{
+		
+		top:30%;
+		margin-left: auto;
+       margin-right: auto;
+	   left: 0;
+right: 0;
+text-align: center;
+	}
+	#tut6{
+		
+		top:0%;
+		margin-left: auto;
+       margin-right: auto;
+	   left: 0;
+right: 0;
+text-align: center;
+	}
+	#tut7{
+		
+		top:30%;
+		margin-left: auto;
+       margin-right: auto;
+	   left: 0;
+right: 0;
+text-align: left;
+	}
+	.bringOut{
+		z-index:10;
+
+		position: relative;
+		-webkit-box-shadow: inset 0px 0px 15px 10px #FFFFFF; 
+		box-shadow: inset 0px 0px 15px 10px #FFFFFF;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+	position: absolute, position: relative, position: fixed, or position: sticky
